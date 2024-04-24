@@ -11,3 +11,11 @@ function completeTask(indice,callback){
         }
     },2000)
 }
+
+completeTask(1, (err, message) => {
+    if (err) {
+        console.error(err.message);
+    } else {
+        console.log(message);
+    }
+})
